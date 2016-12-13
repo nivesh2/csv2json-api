@@ -3,7 +3,7 @@
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-const debug = require('debug')('main:app'),
+const debug = require('debug')('instarem:index'),
       config = require('./config/config'),
       port = process.env.PORT || config.port;
 
