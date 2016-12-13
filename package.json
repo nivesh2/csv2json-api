@@ -10,6 +10,11 @@
   "author": "Nivesh <nivesh2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "4.14.0"
+    "cors": "2.8.1",
+    "express": "4.14.0",
+    "morgan": "1.7.0"
+  },
+  "devDependencies": {
+    "debug": "2.3.3"
   }
 }
