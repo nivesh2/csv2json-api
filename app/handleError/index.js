@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app){
-    const debug = require('debug')('main:handdleError');
+    const debug = require('debug')('instarem:handdleError');
 
     //Error: 404
     app.use((req,res,next)=>{
