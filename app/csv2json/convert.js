@@ -17,7 +17,7 @@ function convert(uri, res, callback){
 
       if(err){
           debug('Error',err);
-          callback(err);
+          return callback(err);
       }
 
     debug('content-type:', response.headers['content-type']);
