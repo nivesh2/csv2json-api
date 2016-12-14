@@ -15,10 +15,10 @@ function convert(uri, res, callback){
 
   request.head(uri, function(err, response, body){
 
-      if(err){
-          debug('Error',err);
-          return callback(err);
-      }
+    if(err){
+       debug('Error',err);
+       return callback(err);
+    }
 
     debug('content-type:', response.headers['content-type']);
     debug('content-length:', response.headers['content-length']);
@@ -37,7 +37,7 @@ module.exports = exports = function(req,res,next){
     
     convert(req.query.q,res, function(err){
         if(err){
-            next(err);
+            return next(err);
         }
         debug('done');
     });
